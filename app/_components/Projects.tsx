@@ -2,7 +2,6 @@ import { Kanit } from "next/font/google";
 import GitHubCalendar from "react-github-calendar";
 import { GitHub, Visibility } from "@mui/icons-material";
 import Link from "next/link";
-import { link } from "fs";
 
 const league1 = Kanit({ subsets: ["latin"], weight: "400" });
 
