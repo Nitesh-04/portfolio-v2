@@ -36,7 +36,7 @@ export default function Organisations() {
 const orgs = [
     {
         "name": "Association for Computing Machinery (ACM-VIT)",
-        "position": "Senior Core Committee",
+        "position": "Senior Core Committee Member",
         "date": "MAY 2023 - OCT 2024",
         "description": "Organised and executed multiple flagship events, including Cryptic Hunt, an intricate cryptic clue solving competition, and Reverse Coding, where participants reverse-engineered problem outputs. Played a pivotal role in the web domain in building event portals using Next.js and shadcn/ui, enabling seamless participation for over 700+ attendees.",
     },
