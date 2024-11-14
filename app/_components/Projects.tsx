@@ -49,15 +49,15 @@ export default function Projects() {
 
 const work = [
     {
-      title: "Where-Did-You-Apply",
-      gitlink : "https://github.com/Nitesh-04/where-did-you-apply",
-      wlink: "https://where-did-you-apply.vercel.app/",
+      title: "Track-Hub",
+      gitlink : "https://github.com/Nitesh-04/track-hub",
+      wlink: "https://track-hub.vercel.app/",
       description:
-        "Developed a dynamic application addressing the common challenge of managing internship applications using Next.js, Prisma ORM, CockroachDB, Redis. Integrated user input features to log application statuses, coding rounds, interview dates, and company-specific details.  Implemented a cron job to send their exam reminders via mail.",
-      skills: ["NextJS", "PrismaORM", "CockroachDB","Cron Jobs"],
+        "Developed a dynamic application addressing the common challenge of managing internship applications using Next.js, Prisma ORM, CockroachDB, Redis. Integrated user input features to log application statuses, coding rounds, interview dates, and company-specific details.  Implemented a cron job to send their next round reminders via email.",
+      skills: ["NextJS", "TypeScript","PrismaORM", "CockroachDB","Cron Jobs"],
     },
     {
-      title: "BlogSphere",
+      title: "Blog-Sphere",
       gitlink: "https://github.com/Nitesh-04/BlogSphere",
       wlink: "https://blog-sphere-nk.vercel.app/",
       description:
