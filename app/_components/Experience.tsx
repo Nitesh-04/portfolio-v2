@@ -23,7 +23,15 @@ export default function Experience() {
             <div className="md:col-span-3">
               <p className="text-slate-100 font-semibold text-lg">{item.title}</p>
               <p className="text-teal-300 text-sm mb-2">{item.company}</p>
-              <p className="text-slate-400 text-sm mb-4 text-justify">{item.description}</p>
+              <div className="text-slate-400 text-sm mb-4 text-justify">
+                <ul className="list-disc list-inside mt-5">
+                  {item.description.split("\n").map((line, index) => (
+                      line.trim() && (
+                        <li key={index} className="mb-4 md:mb-1">{line.trim()}</li>
+                      )
+                    ))}
+                </ul>
+              </div>
 
               <div className="flex flex-wrap gap-2">
                 {item.skills.map((skill, index) => (
@@ -46,11 +54,11 @@ export default function Experience() {
 
 const work = [
     {
-      title: "PRISM Research Intern",
+      title: "PRISM Intern",
       company: "Samsung R&D Institute India",
       date: "OCT 2024 - PRESENT",
       description:
-        "Working on an Enhanced Wakeup Detection System, under the PRISM program. The work-let objective is to explore spoof-proof wakeup detection techniques tailored for the Samsung voice assistant Bixby.",
+        "Developing an Enhanced Wakeup Detection System, under the PRISM program. \nGoal is to explore spoof-proof wakeup detection techniques tailored for the Samsung voice assistant Bixby.",
       skills: ["Machine Learning", "Deep Learning"],
     },
     {
@@ -58,7 +66,7 @@ const work = [
       company: "Reserve Bank Innovation Hub",
       date: "JUN - JUL 2024",
       description:
-        "Conducted in-depth research on various financial calculators and terms, aimed to enhance financial literacy among new users and address common issues. Undertook the development of innovative and user-centric financial calculators with visualizers using ReactJS.",
-      skills: ["ReactJS", "Financial Calculations","Figma"],
+        "Conducted in-depth research on various financial calculators and terms, aimed to enhance financial literacy among new users. \nUndertook the development of innovative and user-centric financial calculators with visualizers using ReactJS.",
+      skills: ["ReactJS", "Financial Calculations","Design"],
     },
 ];
